@@ -628,6 +628,7 @@ creatPdf({
                           subTextBP('Paulo Roberto| 61 99166-3772', txtSize),
                           subTextBP('Francisco| 61 99596-9737', txtSize),
                           subTextBP('eletro.solar@gmail.com', txtSize),
+                          subTextBP('CNPJ: 44511008000198', txtSize),
                         ],
                       )
                     ],
