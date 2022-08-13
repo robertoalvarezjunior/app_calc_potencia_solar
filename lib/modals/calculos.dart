@@ -1,5 +1,14 @@
 import 'package:intl/intl.dart';
 
+class NumModulos {
+  static numModulos(value, potPlaca) {
+    double calc = value / (5.23 * 30 * 0.75);
+    double numM = (calc / potPlaca) * 1000;
+
+    return numM.round();
+  }
+}
+
 calcAnual(valor) {
   double valorAno;
 
@@ -10,21 +19,12 @@ calcAnual(valor) {
   return formato.format(valorAno);
 }
 
-calcMediaSolar(media) {
-  double irs = 5.23;
-  double calc = media / (irs * 30 * 0.75);
+calcMediaSolar(value, potPlaca) {
+  double pot = (NumModulos.numModulos(value, potPlaca) * potPlaca) / 1000;
 
   NumberFormat formato = NumberFormat('0.00');
 
-  return formato.format(calc);
-}
-
-numModulos(value, potPlaca) {
-  double irs = 5.26;
-  double calc = value / (irs * 30 * 0.88);
-  double numM = (calc / potPlaca) * 1000;
-
-  return numM.round();
+  return formato.format(pot);
 }
 
 calcLuzAnualCom(value) {

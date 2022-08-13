@@ -84,12 +84,12 @@ class _ViewPropostaState extends State<ViewProposta> {
                             tableRow([
                               escopoProjeto('Módulos fotovoltaicos'),
                               escopoProjeto(
-                                  '${numModulos(widget.mediakwh, widget.potPlaca)}'),
+                                  '${NumModulos.numModulos(widget.mediakwh, widget.potPlaca)}'),
                             ]),
                             tableRow([
                               escopoProjeto('Potência do projeto'),
                               escopoProjeto(
-                                  '${calcMediaSolar(widget.mediakwh)} kWp'),
+                                  '${calcMediaSolar(widget.mediakwh, widget.potPlaca)} kWp'),
                             ]),
                             tableRow([
                               escopoProjeto('Base de consumo'),

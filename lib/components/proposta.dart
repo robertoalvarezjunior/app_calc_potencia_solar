@@ -268,11 +268,14 @@ creatPdf({
                       children: [
                         tableRow([
                           escopoProjeto('Módulos fotovoltaicos', 18),
-                          escopoProjeto('${numModulos(mediakwh, potPlaca)}', 18)
+                          escopoProjeto(
+                              '${NumModulos.numModulos(mediakwh, potPlaca)}',
+                              18)
                         ]),
                         tableRow([
                           escopoProjeto('Potência do projeto', 18),
-                          escopoProjeto('${calcMediaSolar(mediakwh)} kWp', 18),
+                          escopoProjeto(
+                              '${calcMediaSolar(mediakwh, potPlaca)} kWp', 18),
                         ]),
                         tableRow([
                           escopoProjeto('Base de consumo', 18),
