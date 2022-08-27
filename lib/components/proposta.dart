@@ -491,7 +491,7 @@ creatPdf({
               subText(
                   'Após 15 anos é recomendada a troca do inversor (não aplicável para Microinversores).'),
               subText(
-                  'Necessidades específicas poderão ser solucionadas pela Infinity Solar.'),
+                  'Necessidades específicas poderão ser solucionadas pela Eletro Solar.'),
               pw.Row(
                 children: [
                   pw.Image(imageAten, height: 25),
